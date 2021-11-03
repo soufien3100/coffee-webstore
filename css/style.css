@@ -1,0 +1,165 @@
+/* resert*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/* general */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.separator {
+    margin: auto;
+    height: 10px;
+    width: 100px;
+    background: #111;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: white;
+    color: #222;
+    overflow: auto;
+    line-height: 1.7em;
+}
+
+.btn-primary:hover {
+    background: #222;
+    color: white;
+}
+
+
+/* center les icons et les titres */
+
+.container {
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+}
+
+
+/* margin yvertical */
+
+.my-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+html,
+body {
+    /* recuperer le link au site fonts google */
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+
+/* header */
+
+.header {
+    background: #333;
+    /*L'utilisation de overflow: auto permet la création d'un contexte de formatage de blocs et oblige l'élément à prendre en compte les éléments positionnés en float.*/
+    overflow: auto;
+    /*1em = 16px ,h1 dans une nav a une taille de 1.5em par default sa line-height sera de 1.2*1.5*16px =28.8px rappel 1em = 16px
+pour donner a nos elements la meme line-height bous la fixons donc à 1.7em ce qui permet que le clics sur les liens puissent se faire sur toute la hauteur du header*/
+    line-height: 1.7em;
+    /**/
+}
+
+.header nav h1 {
+    float: left;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.header nav ul {
+    float: right;
+    list-style: none;
+}
+
+.header nav h1 a {
+    color: white;
+}
+
+.header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+.header nav ul li a {
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.header nav ul li a:hover {
+    background-color: #444;
+}
+
+.active {
+    background: #444;
+}
+
+
+/* vp */
+
+.vp {
+    height: 700px;
+    background: url(../img/cafe1.jpg) center center;
+    background-size: cover;
+    text-align: center;
+}
+
+.vp-content {
+    max-width: 600px;
+    padding-top: 150px;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+.vp-content h1 {
+    font-size: 50px;
+}
+
+.vp-content p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.9em;
+}
+
+
+/** features */
+
+.features {
+    overflow: auto;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+.feature {
+    float: left;
+    width: 50%;
+}
